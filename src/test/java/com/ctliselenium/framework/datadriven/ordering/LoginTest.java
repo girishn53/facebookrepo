@@ -23,7 +23,7 @@ public class LoginTest extends TestBase {
 	
 	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "OrderingDataProvider")
 	public void loginTest(Hashtable<String, String> table) {
-		APPLICATION_LOG.debug("executing test1");
+	
 		// it checks the runmodes of a test at all levels like suite , testcases and data
 		validateRunmodes("loginTest", Constants.FIRST_SUITE, table.get(Constants.RUNMODE_COL));
 		

@@ -26,7 +26,7 @@ public class AddTest extends TestBase {
 	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "OrderingDataProvider")
 	public void AddTest(Hashtable<String, String> table) {
 		validateRunmodes("AddTest", Constants.FIRST_SUITE, table.get(Constants.RUNMODE_COL));
-
+		
 		doDefaultLogin(table.get(Constants.BROWSER_COL));
 		wait(10000);
 		//click("gotoControlCenter_xpath");

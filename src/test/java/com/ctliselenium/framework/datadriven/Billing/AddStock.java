@@ -29,6 +29,10 @@ public class AddStock extends TestBase {
 		initLogs(this.getClass());
 	}
 
+	private void syso() {
+		// TODO Auto-generated method stub
+
+	}
 	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "BillingDataProvider")
 	public void addStock(Hashtable<String, String> table) throws IOException {
 		validateRunmodes("addStock", Constants.SECOND_SUITE, table.get(Constants.RUNMODE_COL));

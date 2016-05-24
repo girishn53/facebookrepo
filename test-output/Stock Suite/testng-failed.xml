@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Stock Suite]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+  </listeners>
+  <test name=" Stock Add Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.StockSuite.AddStock">
+        <methods>
+          <include name="addStock" invocation-numbers="0 1 2"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.StockSuite.AddStock -->
+      <class name="com.qtpselenium.framework.datadriven.StockSuite.Test2">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.StockSuite.Test2 -->
+    </classes>
+  </test> <!--  Stock Add Test(failed) -->
+</suite> <!-- Failed suite [Stock Suite] -->

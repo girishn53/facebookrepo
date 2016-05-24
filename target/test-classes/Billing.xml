@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Billing Suite">
+<!-- <test name=" Stock Add Test">
+    <classes>
+        <class name="com.ctliselenium.framework.datadriven.StockSuite.AddStock" ></class>  
+    </classes>
+</test> -->
+
+<test name=" View Bill Test">
+    <classes>
+        <class name="com.ctliselenium.framework.datadriven.Billing.ViewBillTest" ></class>  
+    </classes>
+</test>
+</suite>
+

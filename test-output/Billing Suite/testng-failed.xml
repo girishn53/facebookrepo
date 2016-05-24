@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Billing Suite]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+    <listener class-name="com.qtpselenium.framework.datadriven.ExtentReporterNG"/>
+  </listeners>
+  <test name=" View Bill Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Billing.ViewBillTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="ViewBillTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Billing.ViewBillTest -->
+    </classes>
+  </test> <!--  View Bill Test(failed) -->
+</suite> <!-- Failed suite [Billing Suite] -->

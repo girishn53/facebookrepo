@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Portfolio suite]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+  </listeners>
+  <test name="login Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.portfolio.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="loginTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.portfolio.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.portfolio.LeastPerAssetTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.portfolio.LeastPerAssetTest -->
+    </classes>
+  </test> <!-- login Test(failed) -->
+  <test name="Least Per Asset Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.portfolio.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.portfolio.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.portfolio.LeastPerAssetTest">
+        <methods>
+          <include name="LeastPerAssetTest" invocation-numbers="0 1 2"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.portfolio.LeastPerAssetTest -->
+    </classes>
+  </test> <!-- Least Per Asset Test(failed) -->
+</suite> <!-- Failed suite [Portfolio suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite C]">
+  <listeners>
+    <listener class-name="com.ctliselenium.framework.datadriven.CustomListener"/>
+    <listener class-name="com.ctliselenium.framework.datadriven.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test 1(failed)" preserve-order="true">
+    <classes>
+      <class name="com.ctliselenium.framework.datadriven.suiteC.Test1">
+        <methods>
+          <include name="test1" invocation-numbers="1 2"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.ctliselenium.framework.datadriven.suiteC.Test1 -->
+    </classes>
+  </test> <!-- Test 1(failed) -->
+</suite> <!-- Failed suite [Suite C] -->

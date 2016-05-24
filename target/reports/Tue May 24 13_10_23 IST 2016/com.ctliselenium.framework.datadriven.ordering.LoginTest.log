@@ -1,0 +1,8 @@
+2016-05-24 13:10:25,083 DEBUG [LoginTest] executing test1
+2016-05-24 13:10:25,083 DEBUG [LoginTest] validating runmode forloginTestin suiteOrderingSuite
+2016-05-24 13:10:25,208 DEBUG [LoginTest] skipping the test=loginTestinside the suite=OrderingSuite
+2016-05-24 13:10:25,208 DEBUG [LoginTest] executing test1
+2016-05-24 13:10:25,208 DEBUG [LoginTest] validating runmode forloginTestin suiteOrderingSuite
+2016-05-24 13:10:25,301 DEBUG [LoginTest] skipping the test=loginTestinside the suite=OrderingSuite
+2016-05-24 13:10:25,301 DEBUG [LoginTest] executing test1
+2016-05-24 13:10:25,301 DEBUG [LoginTest] validating runmode forloginTestin suiteOrderingSuite

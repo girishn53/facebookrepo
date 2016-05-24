@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33604" started-at="2016-05-24T16:30:10Z" finished-at="2016-05-24T16:30:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33604" started-at="2016-05-24T16:30:10Z" finished-at="2016-05-24T16:30:43Z">
+      <class name="com.ctliselenium.framework.datadriven.ordering.LoginTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.ctliselenium.framework.datadriven.ordering.LoginTest@1576f881]" name="initLogs" is-config="true" duration-ms="125" started-at="2016-05-24T16:30:10Z" finished-at="2016-05-24T16:30:10Z">
+        </test-method> <!-- initLogs -->
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.ctliselenium.framework.datadriven.ordering.LoginTest@1576f881]" name="loginTest" duration-ms="125" started-at="2016-05-24T16:30:11Z" data-provider="OrderingDataProvider" finished-at="2016-05-24T16:30:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test=loginTestinside the suite=OrderingSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test=loginTestinside the suite=OrderingSuite
+	at com.ctliselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:88)
+	at com.ctliselenium.framework.datadriven.ordering.LoginTest.loginTest(LoginTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+        </test-method> <!-- loginTest -->
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.ctliselenium.framework.datadriven.ordering.LoginTest@1576f881]" name="loginTest" duration-ms="94" started-at="2016-05-24T16:30:11Z" data-provider="OrderingDataProvider" finished-at="2016-05-24T16:30:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping the test=loginTestinside the suite=OrderingSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping the test=loginTestinside the suite=OrderingSuite
+	at com.ctliselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:88)
+	at com.ctliselenium.framework.datadriven.ordering.LoginTest.loginTest(LoginTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.ctliselenium.framework.datadriven.ordering.LoginTest@1576f881]" name="loginTest" duration-ms="32417" started-at="2016-05-24T16:30:11Z" data-provider="OrderingDataProvider" finished-at="2016-05-24T16:30:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.ctliselenium.framework.datadriven.ordering.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

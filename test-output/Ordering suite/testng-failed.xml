@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ordering suite]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+    <listener class-name="com.qtpselenium.framework.datadriven.ExtentReporterNG"/>
+  </listeners>
+  <test name="login Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.ordering.AddTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.ordering.AddTest -->
+      <class name="com.qtpselenium.framework.datadriven.ordering.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="loginTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.ordering.LoginTest -->
+    </classes>
+  </test> <!-- login Test(failed) -->
+  <test name="Add Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.ordering.AddTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="AddTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.ordering.AddTest -->
+      <class name="com.qtpselenium.framework.datadriven.ordering.LoginTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.ordering.LoginTest -->
+    </classes>
+  </test> <!-- Add Test(failed) -->
+</suite> <!-- Failed suite [Ordering suite] -->

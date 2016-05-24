@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">4 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite_C">
+              <span class="suite-name border-skipped">Suite C</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite_C">
+                    <span>C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\Suite_C.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite_C">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite_C">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite_C">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite_C">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite_C">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite_C">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite_C" class="hide-methods skipped suite-Suite_C"> (hide)</a> <!-- hide-methods skipped suite-Suite_C -->
+                      <a href="#" panel-name="suite-Suite_C" class="show-methods skipped suite-Suite_C"> (show)</a> <!-- show-methods skipped suite-Suite_C -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite_C">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.ctliselenium.framework.datadriven.suiteC.Test1" hash-for-method="test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})">test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.ctliselenium.framework.datadriven.suiteC.Test1" hash-for-method="test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})">test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite_C -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite_C" class="hide-methods passed suite-Suite_C"> (hide)</a> <!-- hide-methods passed suite-Suite_C -->
+                      <a href="#" panel-name="suite-Suite_C" class="show-methods passed suite-Suite_C"> (show)</a> <!-- show-methods passed suite-Suite_C -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite_C">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_C" title="com.ctliselenium.framework.datadriven.suiteC.Test1" hash-for-method="test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})">test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite_C -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Ordering_suite">
+              <span class="suite-name border-skipped">Ordering suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Ordering_suite">
+                    <span>C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\Ordering.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Ordering_suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Ordering_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Ordering_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Ordering_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Ordering_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Ordering_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Ordering_suite" class="hide-methods skipped suite-Ordering_suite"> (hide)</a> <!-- hide-methods skipped suite-Ordering_suite -->
+                      <a href="#" panel-name="suite-Ordering_suite" class="show-methods skipped suite-Ordering_suite"> (show)</a> <!-- show-methods skipped suite-Ordering_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Ordering_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ordering_suite" title="com.ctliselenium.framework.datadriven.ordering.LoginTest" hash-for-method="loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})">loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ordering_suite" title="com.ctliselenium.framework.datadriven.ordering.LoginTest" hash-for-method="loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})">loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Ordering_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Ordering_suite" class="hide-methods passed suite-Ordering_suite"> (hide)</a> <!-- hide-methods passed suite-Ordering_suite -->
+                      <a href="#" panel-name="suite-Ordering_suite" class="show-methods passed suite-Ordering_suite"> (show)</a> <!-- show-methods passed suite-Ordering_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Ordering_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ordering_suite" title="com.ctliselenium.framework.datadriven.ordering.AddTest" hash-for-method="AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})">AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ordering_suite" title="com.ctliselenium.framework.datadriven.ordering.LoginTest" hash-for-method="loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)">loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Ordering_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Billing_Suite">
+              <span class="suite-name border-passed">Billing Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Billing_Suite">
+                    <span>C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\Billing.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Billing_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Billing_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Billing_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Billing_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Billing_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Billing_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Billing_Suite" class="hide-methods passed suite-Billing_Suite"> (hide)</a> <!-- hide-methods passed suite-Billing_Suite -->
+                      <a href="#" panel-name="suite-Billing_Suite" class="show-methods passed suite-Billing_Suite"> (show)</a> <!-- show-methods passed suite-Billing_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Billing_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Billing_Suite" title="com.ctliselenium.framework.datadriven.Billing.ViewBillTest" hash-for-method="ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})">ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Billing_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite_C" class="panel Suite_C">
+          <div class="suite-Suite_C-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ctliselenium.framework.datadriven.suiteC.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})">
+                  </a> <!-- test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=}) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})</span>
+                  <div class="stack-trace"><b>"skipping the test=test1inside the suite=SuiteC"</b><br>com.ctliselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:88)<br>com.ctliselenium.framework.datadriven.suiteC.Test1.test1(Test1.java:23)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1184)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})">
+                  </a> <!-- test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=}) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})</span>
+                  <div class="stack-trace"><b>"skipping the test=test1inside the suite=SuiteC"</b><br>com.ctliselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:88)<br>com.ctliselenium.framework.datadriven.suiteC.Test1.test1(Test1.java:23)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1184)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_C-class-skipped -->
+          <div class="suite-Suite_C-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ctliselenium.framework.datadriven.suiteC.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})">
+                  </a> <!-- test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">test1</span>
+                  <span class="parameters">({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_C-class-passed -->
+        </div> <!-- panel Suite_C -->
+        <div panel-name="suite-Ordering_suite" class="panel Ordering_suite">
+          <div class="suite-Ordering_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ctliselenium.framework.datadriven.ordering.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})">
+                  </a> <!-- loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace"><b>"skipping the test=loginTestinside the suite=OrderingSuite"</b><br>com.ctliselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:88)<br>com.ctliselenium.framework.datadriven.ordering.LoginTest.loginTest(LoginTest.java:28)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1184)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})">
+                  </a> <!-- loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace"><b>"skipping the test=loginTestinside the suite=OrderingSuite"</b><br>com.ctliselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:88)<br>com.ctliselenium.framework.datadriven.ordering.LoginTest.loginTest(LoginTest.java:28)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1184)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ordering_suite-class-skipped -->
+          <div class="suite-Ordering_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ctliselenium.framework.datadriven.ordering.AddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})">
+                  </a> <!-- AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">AddTest</span>
+                  <span class="parameters">({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ordering_suite-class-passed -->
+          <div class="suite-Ordering_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ctliselenium.framework.datadriven.ordering.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)">
+                  </a> <!-- loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozilla, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ordering_suite-class-passed -->
+        </div> <!-- panel Ordering_suite -->
+        <div panel-name="suite-My_Project" class="panel My_Project">
+        </div> <!-- panel My_Project -->
+        <div panel-name="suite-Billing_Suite" class="panel Billing_Suite">
+          <div class="suite-Billing_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ctliselenium.framework.datadriven.Billing.ViewBillTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})">
+                  </a> <!-- ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">ViewBillTest</span>
+                  <span class="parameters">({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Billing_Suite-class-passed -->
+        </div> <!-- panel Billing_Suite -->
+        <div panel-name="test-xml-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\Suite_C.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite C&quot;&gt;
+  &lt;test name=&quot;Test 1&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ctliselenium.framework.datadriven.suiteC.Test1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 1 --&gt;
+&lt;/suite&gt; &lt;!-- Suite C --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\Ordering.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Ordering suite&quot;&gt;
+  &lt;test name=&quot;login Test&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ctliselenium.framework.datadriven.ordering.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- login Test --&gt;
+  &lt;test name=&quot;Add Test&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ctliselenium.framework.datadriven.ordering.AddTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Test --&gt;
+&lt;/suite&gt; &lt;!-- Ordering suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;My Project&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.ctliselenium.framework.datadriven.CustomListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.ctliselenium.framework.datadriven.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./Ordering.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./Billing.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./Suite_C.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My Project --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\src\test\resources\Billing.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Billing Suite&quot;&gt;
+  &lt;test name=&quot; View Bill Test&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ctliselenium.framework.datadriven.Billing.ViewBillTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!--  View Bill Test --&gt;
+&lt;/suite&gt; &lt;!-- Billing Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test 1 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Ordering suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Billing Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name"> View Bill Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Ordering suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Billing Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite_C');
+function tableData_Suite_C() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'com.ctliselenium.framework.datadriven.suiteC.Test1')
+data.setCell(0, 3, 104606);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test1')
+data.setCell(1, 2, 'com.ctliselenium.framework.datadriven.suiteC.Test1')
+data.setCell(1, 3, 156);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test1')
+data.setCell(2, 2, 'com.ctliselenium.framework.datadriven.suiteC.Test1')
+data.setCell(2, 3, 79);
+window.suiteTableData['Suite_C']= { tableData: data, tableDiv: 'times-div-Suite_C'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite_C">
+              </div> <!-- times-div-Suite_C -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Ordering suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Ordering_suite');
+function tableData_Ordering_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.ctliselenium.framework.datadriven.ordering.LoginTest')
+data.setCell(0, 3, 42511);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddTest')
+data.setCell(1, 2, 'com.ctliselenium.framework.datadriven.ordering.AddTest')
+data.setCell(1, 3, 34739);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.ctliselenium.framework.datadriven.ordering.LoginTest')
+data.setCell(2, 3, 97);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'com.ctliselenium.framework.datadriven.ordering.LoginTest')
+data.setCell(3, 3, 94);
+window.suiteTableData['Ordering_suite']= { tableData: data, tableDiv: 'times-div-Ordering_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Ordering_suite">
+              </div> <!-- times-div-Ordering_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Project');
+function tableData_My_Project() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_Project']= { tableData: data, tableDiv: 'times-div-My_Project'}
+return data;
+}
+              </script>
+              <div id="times-div-My_Project">
+              </div> <!-- times-div-My_Project -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Billing Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Billing_Suite');
+function tableData_Billing_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ViewBillTest')
+data.setCell(0, 2, 'com.ctliselenium.framework.datadriven.Billing.ViewBillTest')
+data.setCell(0, 3, 49506);
+window.suiteTableData['Billing_Suite']= { tableData: data, tableDiv: 'times-div-Billing_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <div id="times-div-Billing_Suite">
+              </div> <!-- times-div-Billing_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite C</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Ordering suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Billing Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite_C" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)</span>
+                <span class="method-start">3264 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.AddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">45978 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})</span>
+                <span class="method-start">46056 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.Billing.ViewBillTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">86261 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">86338 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.suiteC.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">136304 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">136397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})</span>
+                <span class="method-start">241003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})</span>
+                <span class="method-start">241159 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Ordering_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)</span>
+                <span class="method-start">3264 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.AddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">45978 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})</span>
+                <span class="method-start">46056 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.Billing.ViewBillTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">86261 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">86338 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.suiteC.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">136304 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">136397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})</span>
+                <span class="method-start">241003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})</span>
+                <span class="method-start">241159 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)</span>
+                <span class="method-start">3264 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.AddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">45978 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})</span>
+                <span class="method-start">46056 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.Billing.ViewBillTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">86261 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">86338 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.suiteC.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">136304 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">136397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})</span>
+                <span class="method-start">241003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})</span>
+                <span class="method-start">241159 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Billing_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C22, Password=C33, Runmode=N, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Mozilla, Result=})</span>
+                <span class="method-start">3170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=24769_itv2_selenium, Password=qcontrol1, Runmode=Y, Expected_Result=FAILURE, Browser=Mozil...)</span>
+                <span class="method-start">3264 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.ordering.AddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">45978 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddTest({Col5=C53, Col4=C43, Col3=C33, Runmode=Y, PurchaseDate=25/5/2016, Browser=Mozilla, Result=})</span>
+                <span class="method-start">46056 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.Billing.ViewBillTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">86261 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ViewBillTest({Col5=C53, Col4=C43, Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">86338 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ctliselenium.framework.datadriven.suiteC.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">136304 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C33, Col2=C22, Runmode=Y, Browser=Mozilla, Result=})</span>
+                <span class="method-start">136397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C34, Col2=C23, Runmode=N, Browser=C21, Result=})</span>
+                <span class="method-start">241003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test1({Col3=C35, Col2=C24, Runmode=N, Browser=C31, Result=})</span>
+                <span class="method-start">241159 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

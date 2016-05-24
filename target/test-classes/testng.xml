@@ -1,0 +1,21 @@
+<suite name="My Project"  parallel="tests">
+	<listeners>
+	<listener class-name="com.ctliselenium.framework.datadriven.CustomListener">
+	</listener>
+	
+	<listener class-name="com.ctliselenium.framework.datadriven.ExtentReporterNG" />
+	</listeners>
+
+<!-- <listeners>
+<listener class-name="com.ctliselenium.framework.datadriven.ExtentReporterNG" />
+</listeners>
+ -->
+
+
+<suite-files>
+  <suite-file path="./Ordering.xml"/>
+ <suite-file path="./Billing.xml"/>  
+ <suite-file path="./Suite_C.xml"/> 
+ 
+ </suite-files>
+</suite>

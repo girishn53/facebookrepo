@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Ordering suite]">
+  <listeners>
+    <listener class-name="com.ctliselenium.framework.datadriven.CustomListener"/>
+    <listener class-name="com.ctliselenium.framework.datadriven.ExtentReporterNG"/>
+  </listeners>
+  <test name="login Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.ctliselenium.framework.datadriven.ordering.AddTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.ctliselenium.framework.datadriven.ordering.AddTest -->
+      <class name="com.ctliselenium.framework.datadriven.ordering.LoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0 1"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.ctliselenium.framework.datadriven.ordering.LoginTest -->
+    </classes>
+  </test> <!-- login Test(failed) -->
+</suite> <!-- Failed suite [Ordering suite] -->

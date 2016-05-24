@@ -1,0 +1,5 @@
+2016-05-24 13:12:09,282 DEBUG [Test1] validating runmode fortest1in suiteSuiteC
+2016-05-24 13:13:04,013 DEBUG [Test1] validating runmode fortest1in suiteSuiteC
+2016-05-24 13:13:04,109 DEBUG [Test1] skipping the test=test1inside the suite=SuiteC
+2016-05-24 13:13:04,110 DEBUG [Test1] validating runmode fortest1in suiteSuiteC
+2016-05-24 13:13:04,178 DEBUG [Test1] skipping the test=test1inside the suite=SuiteC

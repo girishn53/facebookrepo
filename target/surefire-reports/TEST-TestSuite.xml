@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="249.691" tests="8" errors="0" skipped="4" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
+    <property name="java.vm.version" value="23.3-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework"/>
+    <property name="java.runtime.version" value="1.7.0_07-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Windows\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\ab48044\Desktop\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf181698536553814946.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Program Files (x86)\Serena\Dimensions\CM\prog;c:\Program Files (x86)\Serena\Dimensions\CM\prog\Microsoft.VC80.MFC;c:\Program Files (x86)\Serena\Dimensions\CM\prog\Microsoft.VC80.CRT;c:\Program Files (x86)\Serena\Dimensions\CM\prog\Microsoft.VC80.ATL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\ab48044\apache-maven-3.3.9\bin;C:\Program Files\Java\jdk1.7.0_07\bin\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\ab48044"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ab48044"/>
+    <property name="java.class.path" value="/C:/Eclipse_Luna_64/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre7"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_07"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\ab48044\Desktop\workspace\Core_WebDriver_DataDriven_Framework\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="loginTest" classname="com.ctliselenium.framework.datadriven.ordering.LoginTest" time="0">
+    <skipped message="skipping the test=loginTestinside the suite=OrderingSuite"/>
+    <system-out><![CDATA[Starting Ordering suite
+Starting Ordering suite
+testName isloginTest
+total rows in sheet Data are26
+Test starts from row Number -1
+Total rows of data are3
+Total cols of data are6
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.ctliselenium.framework.datadriven.ordering.LoginTest" time="0">
+    <skipped message="skipping the test=loginTestinside the suite=OrderingSuite"/>
+  </testcase>
+  <testcase name="loginTest" classname="com.ctliselenium.framework.datadriven.ordering.LoginTest" time="42.511"/>
+  <testcase name="AddTest" classname="com.ctliselenium.framework.datadriven.ordering.AddTest" time="34.739"/>
+  <testcase name="ViewBillTest" classname="com.ctliselenium.framework.datadriven.Billing.ViewBillTest" time="49.506"/>
+  <testcase name="test1" classname="com.ctliselenium.framework.datadriven.suiteC.Test1" time="104.603"/>
+  <testcase name="test1" classname="com.ctliselenium.framework.datadriven.suiteC.Test1" time="0">
+    <skipped message="skipping the test=test1inside the suite=SuiteC"/>
+  </testcase>
+  <testcase name="test1" classname="com.ctliselenium.framework.datadriven.suiteC.Test1" time="0">
+    <skipped message="skipping the test=test1inside the suite=SuiteC"/>
+  </testcase>
+</testsuite>

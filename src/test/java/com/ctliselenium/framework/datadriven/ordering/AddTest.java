@@ -9,6 +9,7 @@ import java.util.Hashtable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -25,20 +26,35 @@ public class AddTest extends TestBase {
 
 	@Test(dataProviderClass = TestDataProvider.class, dataProvider = "OrderingDataProvider")
 	public void AddTest(Hashtable<String, String> table) {
-		validateRunmodes("AddTest", Constants.FIRST_SUITE, table.get(Constants.RUNMODE_COL));
-		
+		validateRunmodes("AddTest", Constants.FIRST_SUITE,
+				table.get(Constants.RUNMODE_COL));
+
 		doDefaultLogin(table.get(Constants.BROWSER_COL));
 		wait(10000);
-		//click("gotoControlCenter_xpath");
+		// click("gotoControlCenter_xpath");
 		// click("close_xpath");
 		mouseOver("ordersTab_xpath", driver);
 		wait(5000);
 		click("addlink_xpath");
 
+		// Verify Title
+		Assert.assertTrue(verifyTitle("addPageTitle"),
+				"Titles do not match of Addpage");
+
 		switchToFrame("_48_INSTANCE_ZSN4kDufaWYE_iframe");
+
 		selectFromDropdown("changeOrderSelection", "Private Line");
 
+		input("contactName_xpath", table.get("Name"));
+		input("contactPhone_xpath", table.get("Phone"));
+		input("contactEmail_xpath", table.get("Email"));
+		//input("accountNumber_xpath", table.get("AccountNumber"));
+
 		wait(20000);
+		
+		click("single_xpath");
+		
+		
 		// code to select date from calendar
 
 		click("calendar_xpath");
@@ -74,7 +90,8 @@ public class AddTest extends TestBase {
 
 		// driver.findElement(By.xpath("//td[text()='" + day + "']")).click();
 
-		driver.findElement(By.xpath("//*[contains(@id,'"+ day +"')]")).click();
+		driver.findElement(By.xpath("//*[contains(@id,'" + day + "')]"))
+				.click();
 
 		wait(2000);
 

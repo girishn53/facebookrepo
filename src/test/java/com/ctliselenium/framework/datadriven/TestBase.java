@@ -22,7 +22,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
 
@@ -222,10 +225,24 @@ public class TestBase {
 	}
 	
 	
+	
+	public void waitTillInvisible(String identifier, WebDriver driver , Integer timeOutInSeconds)
+	{
+		
+		 WebDriverWait wait=new WebDriverWait(driver, timeOutInSeconds);
+		 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(identifier)));
+		
+		
+	}
+	
+	
+	
+	
 	public void selectFromDropdown(String id, String value)
 	{
 		Select s =new Select(driver.findElement(By.id(id)));
 		s.selectByVisibleText(value);
+		
 		
 	}
 	

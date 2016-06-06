@@ -45,21 +45,23 @@ public class AddTest extends TestBase {
 
 		selectFromDropdown("changeOrderSelection", "Private Line");
 
+		waitTillInvisible("loadimage_xpath", driver, 60);
+
 		input("contactName_xpath", table.get("Name"));
 		input("contactPhone_xpath", table.get("Phone"));
 		input("contactEmail_xpath", table.get("Email"));
-		//input("accountNumber_xpath", table.get("AccountNumber"));
+		input("accountNumber_xpath", table.get("AccountNumber"));
+		click("calendar_xpath");
+		waitTillInvisible("loadimage_xpath", driver, 60);
 
-		wait(20000);
-		
 		click("single_xpath");
-		
-		
+
 		// code to select date from calendar
 
 		click("calendar_xpath");
 
 		String date = table.get("PurchaseDate");
+		System.out.println("The date is "+date);
 
 		Date currentDate = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");

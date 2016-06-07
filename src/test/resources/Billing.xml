@@ -11,5 +11,17 @@
         <class name="com.ctliselenium.framework.datadriven.Billing.ViewBillTest" ></class>  
     </classes>
 </test>
+
+<test name=" Payment Options Test">
+    <classes>
+        <class name="com.ctliselenium.framework.datadriven.Billing.PaymentOptionsTest" ></class>  
+    </classes>
+</test>
+
+
+
+
+
+
 </suite>
 

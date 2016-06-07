@@ -43,8 +43,9 @@ public class TestBase {
 
 		FileAppender appender = new FileAppender();
 		// configure the appender here, with file location, etc
-		appender.setFile(System.getProperty("user.dir") + "//target//reports//" + CustomListener.resultFolderName + "//"
-				+ class1.getName() + ".log");
+		appender.setFile(System.getProperty("user.dir") + "//target//reports//"
+				+ CustomListener.resultFolderName + "//" + class1.getName()
+				+ ".log");
 		appender.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		appender.setAppend(false);
 		appender.activateOptions();
@@ -58,7 +59,8 @@ public class TestBase {
 
 	public static void init() {
 		if (prop == null) {
-			String path = System.getProperty("user.dir") + "\\src\\test\\resources\\project.properties";
+			String path = System.getProperty("user.dir")
+					+ "\\src\\test\\resources\\project.properties";
 			prop = new Properties();
 			try {
 				FileInputStream fs = new FileInputStream(path);
@@ -72,23 +74,32 @@ public class TestBase {
 		}
 	}
 
-	public void validateRunmodes(String testName, String suiteName, String dataRunmode) {
+	public void validateRunmodes(String testName, String suiteName,
+			String dataRunmode) {
 
-		APPLICATION_LOG.debug("validating runmode for" + testName + "in suite" + suiteName);
+		APPLICATION_LOG.debug("validating runmode for" + testName + "in suite"
+				+ suiteName);
 
 		init();
 
-		boolean suiteRunmode = Utility.isSuiteRunnable(suiteName,
-				new Xls_Reader(System.getProperty("user.dir") + prop.getProperty("xlsfileLocation") + "Suite.xlsx"));
-		boolean testRunmode = Utility.isTestCaseRunnable(testName, new Xls_Reader(
-				System.getProperty("user.dir") + prop.getProperty("xlsfileLocation") + suiteName + ".xlsx"));
+		boolean suiteRunmode = Utility.isSuiteRunnable(
+				suiteName,
+				new Xls_Reader(System.getProperty("user.dir")
+						+ prop.getProperty("xlsfileLocation") + "Suite.xlsx"));
+		boolean testRunmode = Utility.isTestCaseRunnable(
+				testName,
+				new Xls_Reader(System.getProperty("user.dir")
+						+ prop.getProperty("xlsfileLocation") + suiteName
+						+ ".xlsx"));
 		boolean dataSetRunmode = false;
 		if (dataRunmode.equals(Constants.RUNMODE_YES)) {
 			dataSetRunmode = true;
 		}
 		if (!(suiteRunmode && testRunmode && dataSetRunmode)) {
-			APPLICATION_LOG.debug("skipping the test=" + testName + "inside the suite=" + suiteName);
-			throw new SkipException("skipping the test=" + testName + "inside the suite=" + suiteName);
+			APPLICATION_LOG.debug("skipping the test=" + testName
+					+ "inside the suite=" + suiteName);
+			throw new SkipException("skipping the test=" + testName
+					+ "inside the suite=" + suiteName);
 		}
 	}
 
@@ -101,7 +112,8 @@ public class TestBase {
 			driver = new FirefoxDriver();
 
 		else if (browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverexe"));
+			System.setProperty("webdriver.chrome.driver",
+					prop.getProperty("chromedriverexe"));
 			driver = new ChromeDriver();
 		}
 
@@ -130,25 +142,30 @@ public class TestBase {
 	public void click(String identifier) {
 		try {
 			if (identifier.endsWith("_xpath")) {
-				driver.findElement(By.xpath(prop.getProperty(identifier))).click();
+				driver.findElement(By.xpath(prop.getProperty(identifier)))
+						.click();
 			} else if (identifier.endsWith("_id")) {
 				driver.findElement(By.id(prop.getProperty(identifier))).click();
 			} else if (identifier.endsWith("_name")) {
-				driver.findElement(By.name(prop.getProperty(identifier))).click();
+				driver.findElement(By.name(prop.getProperty(identifier)))
+						.click();
 			}
 		} catch (NoSuchElementException e) {
-			Assert.fail("Element not found" + identifier );
+			Assert.fail("Element not found" + identifier);
 		}
 
 	}
 
 	public void input(String identifier, String data) {
 		if (identifier.endsWith("_xpath")) {
-			driver.findElement(By.xpath(prop.getProperty(identifier))).sendKeys(data);
+			driver.findElement(By.xpath(prop.getProperty(identifier)))
+					.sendKeys(data);
 		} else if (identifier.endsWith("_id")) {
-			driver.findElement(By.id(prop.getProperty(identifier))).sendKeys(data);
+			driver.findElement(By.id(prop.getProperty(identifier))).sendKeys(
+					data);
 		} else if (identifier.endsWith("_name")) {
-			driver.findElement(By.name(prop.getProperty(identifier))).sendKeys(data);
+			driver.findElement(By.name(prop.getProperty(identifier))).sendKeys(
+					data);
 		}
 	}
 
@@ -186,14 +203,17 @@ public class TestBase {
 
 		int size = 0;
 		if (identifier.endsWith("_xpath")) {
-			size = driver.findElements(By.xpath(prop.getProperty(identifier))).size();
+			size = driver.findElements(By.xpath(prop.getProperty(identifier)))
+					.size();
 		}
 
 		else if (identifier.endsWith("_id")) {
-			size = driver.findElements(By.xpath(prop.getProperty(identifier))).size();
+			size = driver.findElements(By.xpath(prop.getProperty(identifier)))
+					.size();
 
 		} else if (identifier.endsWith("_name")) {
-			size = driver.findElements(By.xpath(prop.getProperty(identifier))).size();
+			size = driver.findElements(By.xpath(prop.getProperty(identifier)))
+					.size();
 
 		}
 
@@ -223,29 +243,21 @@ public class TestBase {
 		driver.switchTo().frame(id);
 
 	}
-	
-	
-	
-	public void waitTillInvisible(String identifier, WebDriver driver , Integer timeOutInSeconds)
-	{
-		
-		 WebDriverWait wait=new WebDriverWait(driver, timeOutInSeconds);
-		 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(identifier)));
-		
-		
+
+	public void waitTillInvisible(String identifier, WebDriver driver,
+			Integer timeOutInSeconds) {
+
+		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By
+				.xpath(identifier)));
+
 	}
-	
-	
-	
-	
-	public void selectFromDropdown(String id, String value)
-	{
-		Select s =new Select(driver.findElement(By.id(id)));
+
+	public void selectFromDropdown(String id, String value) {
+		Select s = new Select(driver.findElement(By.id(id)));
 		s.selectByVisibleText(value);
-		
-		
+
 	}
-	
 
 	public void quit() {
 		if (driver != null) {
@@ -258,11 +270,14 @@ public class TestBase {
 
 		String text = "";
 		if (identifier.endsWith("_xpath")) {
-			text = driver.findElement(By.xpath(prop.getProperty(identifier))).getText();
+			text = driver.findElement(By.xpath(prop.getProperty(identifier)))
+					.getText();
 		} else if (identifier.endsWith("_id")) {
-			text = driver.findElement(By.id(prop.getProperty(identifier))).getText();
+			text = driver.findElement(By.id(prop.getProperty(identifier)))
+					.getText();
 		} else if (identifier.endsWith("_name")) {
-			text = driver.findElement(By.name(prop.getProperty(identifier))).getText();
+			text = driver.findElement(By.name(prop.getProperty(identifier)))
+					.getText();
 		}
 		return text;
 	}
@@ -285,7 +300,8 @@ public class TestBase {
 
 	public void doDefaultLogin(String browser) {
 
-		doLogin(browser, prop.getProperty("defaultUsername"), prop.getProperty("defaultpassword"));
+		doLogin(browser, prop.getProperty("defaultUsername"),
+				prop.getProperty("defaultpassword"));
 
 	}
 

@@ -20,7 +20,7 @@ public class ViewBillTest extends TestBase {
 		validateRunmodes("ViewBillTest", Constants.SECOND_SUITE, table.get(Constants.RUNMODE_COL));
 		
 		doDefaultLogin(table.get(Constants.BROWSER_COL));
-	/*	wait(10000);
+		wait(10000);
 		//click("gotoControlCenter_xpath");
 		mouseOver("billingTab_xpath", driver);
 		wait(5000);
@@ -28,6 +28,6 @@ public class ViewBillTest extends TestBase {
 		wait(1000);
 		quit();
 		
-		*/
+		
 	}
 }

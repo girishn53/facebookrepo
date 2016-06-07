@@ -56,12 +56,15 @@ public class AddTest extends TestBase {
 
 		click("single_xpath");
 
+		input("aLocation_xpath", "test");
+		input("zLocation_xpath", "test");
+
 		// code to select date from calendar
 
 		click("calendar_xpath");
 
 		String date = table.get("PurchaseDate");
-		System.out.println("The date is "+date);
+		System.out.println("The date is " + date);
 
 		Date currentDate = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
@@ -96,6 +99,8 @@ public class AddTest extends TestBase {
 				.click();
 
 		wait(2000);
+
+		click("submitRequestButton_xpath");
 
 		quit();
 

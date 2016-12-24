@@ -1,15 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Ordering suite">
-<test name="login Test">
-    <classes>
-        <class name="com.ctliselenium.framework.datadriven.ordering.LoginTest" ></class>  
-    </classes>
-</test>
-<test name="Add Test">
-    <classes>
-        <class name="com.ctliselenium.framework.datadriven.ordering.AddTest" ></class>  
-    </classes>
-</test>
+	<test name="login Test">
+		<classes>
+			<class name="com.ctliselenium.framework.datadriven.ordering.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="Add Private Line Test ">
+		<classes>
+			<class
+				name="com.ctliselenium.framework.datadriven.ordering.Add_PrivateLineTest"></class>
+		</classes>
+	</test>
 </suite>
 

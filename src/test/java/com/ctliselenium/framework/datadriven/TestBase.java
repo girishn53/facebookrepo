@@ -253,8 +253,8 @@ public class TestBase {
 
 	}
 
-	public void selectFromDropdown(String id, String value) {
-		Select s = new Select(driver.findElement(By.id(id)));
+	public void selectFromDropdown(String xpath, String value) {
+		Select s = new Select(driver.findElement(By.xpath(prop.getProperty(xpath))));
 		s.selectByVisibleText(value);
 
 	}

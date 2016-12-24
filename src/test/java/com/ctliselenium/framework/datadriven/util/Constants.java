@@ -16,9 +16,11 @@ public class Constants {
 	public static String SUITENAME_COL = "SuiteName";
 	public static String RUNMODE_COL = "Runmode";
 	public static String TESTCASES_COL = "TestCases";
+	public static String EXPECTEDRESULT_COL="Expected_Result";
+	
+	//user name and password
 	public static String USERNAME_COL="Username";
 	public static String PASSWORD_COL ="Password";
-	public static String EXPECTEDRESULT_COL="Expected_Result";
 	
 	
 	//data col names

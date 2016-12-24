@@ -39,17 +39,17 @@ public class Utility {
 
 	public static Object[][] getData(String testName, Xls_Reader xls) {
 		
-		System.out.println("testName is"+testName);
+		//System.out.println("testName is"+testName);
 		
 		int rows = xls.getRowCount(Constants.DATA_SHEET);
-		System.out.println("total rows in sheet Data are" + rows);
+		//System.out.println("total rows in sheet Data are" + rows);
 		int testCaseRowNum = 1;
 		for (testCaseRowNum = 1; testCaseRowNum <= rows; testCaseRowNum++) {
 			String testNameXls = xls.getCellData(Constants.DATA_SHEET, 0, testCaseRowNum);
 			if (testNameXls.equalsIgnoreCase(testName))
 				break;
 		}
-		System.out.println("Test starts from row Number -" + testCaseRowNum);
+		//System.out.println("Test starts from row Number -" + testCaseRowNum);
 		int dataStartRowNum = testCaseRowNum + 2;
 		int colStartRowNum = testCaseRowNum + 1;
 
@@ -57,14 +57,14 @@ public class Utility {
 		while (!xls.getCellData(Constants.DATA_SHEET, 0, dataStartRowNum + testRows).equals("")) {
 			testRows++;
 		}
-		System.out.println("Total rows of data are" + testRows);
+		//System.out.println("Total rows of data are" + testRows);
 		int testCols = 0;
 		while (!xls.getCellData(Constants.DATA_SHEET, testCols, colStartRowNum).equals("")) {
 			testCols++;
 		}
 		Object[][] data = new Object[testRows][1];
 
-		System.out.println("Total cols of data are" + testCols);
+		//System.out.println("Total cols of data are" + testCols);
 		int r = 0;
 		for (int rNum = dataStartRowNum; rNum < (dataStartRowNum + testRows); rNum++) {
 			Hashtable<String, String> table = new Hashtable<String, String>();

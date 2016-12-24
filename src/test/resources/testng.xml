@@ -15,7 +15,7 @@
 <suite-files>
   <suite-file path="./Ordering.xml"/>
  <suite-file path="./Billing.xml"/>  
- <suite-file path="./Suite_C.xml"/> 
+<!--  <suite-file path="./Suite_C.xml"/>  -->
  
  </suite-files>
 </suite>

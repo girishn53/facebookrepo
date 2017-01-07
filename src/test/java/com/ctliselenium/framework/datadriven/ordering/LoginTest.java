@@ -3,6 +3,7 @@ package com.ctliselenium.framework.datadriven.ordering;
 import java.util.Hashtable;
 
 import org.apache.log4j.TTCCLayout;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -33,19 +34,45 @@ public class LoginTest extends TestBase {
 		validateRunmodes("loginTest", Constants.FIRST_SUITE, table.get(Constants.RUNMODE_COL));
 
 		doLogin(table.get(Constants.BROWSER_COL), table.get(Constants.USERNAME_COL), table.get(Constants.PASSWORD_COL));
-		try{
-		Assert.assertTrue(isElementPresent("welcomemessage_xpath"), "Login not successful");
+		wait(2000);
+
+		try {
+
+			boolean maintainPopUpisThere = isElementPresent("maintainPopUp_xpath");
+
+			if (maintainPopUpisThere) {
+				System.out.println("maintainenance pop up is present");
+
+				click("goToControlCenter_xpath");// if this xpath is not found
+													// it will throw an
+													// ElementNotVisibleException
+													// and test will stop, so I
+													// put it in try block
+
+			}
+
 		}
-		
-		catch(Throwable e)
-		{
-			
-			
-			ErrorUtil.addVerificationFailure(e);
-			//System.out.println("In catch block");
-			Assert.fail("Login not successful");
+
+		catch (ElementNotVisibleException e) {
+
+			System.out.println("goToControlCenter_xpath element not fould and in catch block");
+
 		}
-	
+
+		finally {
+
+			try {
+				Assert.assertTrue(isElementPresent("welcomemessage_xpath"), "Login not successful");
+			}
+
+			catch (Throwable e) {
+
+				ErrorUtil.addVerificationFailure(e);
+				// System.out.println("In catch block");
+				Assert.fail("Login not successful");
+			}
+
+		}
 	}
 
 	@AfterMethod

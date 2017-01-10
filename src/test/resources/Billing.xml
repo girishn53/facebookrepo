@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Billing Suite">
-	<!-- <test name=" Stock Add Test"> <classes> <class name="com.ctliselenium.framework.datadriven.StockSuite.AddStock" 
-		></class> </classes> </test> -->
+
+
 
 	<test name=" View Bill Test">
 		<classes>
@@ -12,11 +12,12 @@
 	<!-- <test name=" Payment Options Test"> <classes> <class name="com.ctliselenium.framework.datadriven.Billing.PaymentOptionsTest" 
 		></class> </classes> </test> -->
 
-<test name=" Create Billing Ticket Test">
+	<test name=" Create Billing Ticket Test">
 		<classes>
-			<class name="com.ctliselenium.framework.datadriven.Billing.CreateBillingTicketTest"></class>
-			
-			
+			<class
+				name="com.ctliselenium.framework.datadriven.Billing.CreateBillingTicketTest"></class>
+
+
 		</classes>
 	</test>
 

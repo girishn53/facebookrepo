@@ -372,8 +372,15 @@ public class TestBase {
 
 			// Set path to the pdf report file
 
+			//String filename = System.getProperty("user.dir")
+				//	+ "\\test-output\\Extent.html";
+			
 			String filename = System.getProperty("user.dir")
-					+ "\\test-output\\Extent.html";
+					+ "\\target\\surefire-reports\\Extent.html";
+			
+			System.out.println("file name is="+filename);
+			
+			
 
 			// Create data source to attach the file in mail
 

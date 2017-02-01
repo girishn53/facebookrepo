@@ -39,7 +39,7 @@ public class ExtentReporterNG implements IReporter  {
         extent.flush();
         extent.close();
         
-        TestBase.sendPDFReportByGMail("girishn53@gmail.com", "Alpha@123",
+        TestBase.sendPDFReportByGMail("girishn53@gmail.com", "jaimatadi@123",
     				"girish.kakwani@centurylink.com", "PDF Report", "");
     }
  

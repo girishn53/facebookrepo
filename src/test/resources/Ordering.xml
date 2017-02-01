@@ -15,5 +15,15 @@
 
 
 
+	<test name="Change Long Distance Test ">
+		<classes>
+			<class
+				name="com.ctliselenium.framework.datadriven.ordering.Change_LongDistanceTest"></class>
+		</classes>
+	</test>
+
+	
+
+
 
 </suite>
